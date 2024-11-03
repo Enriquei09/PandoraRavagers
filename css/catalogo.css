@@ -1,20 +1,19 @@
+/* General */
 body, html {
+    background-image: url(/img/logo.jpg);
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: auto; /* Evita el scroll principal de la página */
-  }
-  
-  .main-content {
+}
+
+.main-content {
     display: flex;
-    flex-direction: column;
-    /* height: 100vh; */
-  }
+    flex-direction: row;
+    margin-top: 80px; /* Ajusta el espacio para que el header fijo no cubra el contenido */
+}
 
-/*--------------------------------- 
-  barra de navegacion
-------------------------------------*/
-
+/* Barra de navegación */
 .header {
     position: fixed;
     top: 0;
@@ -31,68 +30,142 @@ body, html {
     align-items: center;    
     margin: 10px 20px;   
 }
-  
-  .logo{
+
+.logo {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 20px;
-  }
+}
   
-  .title {
+.title {
     font-size: 24px;
     font-family: 'Georgia', serif; /* Estilo de letra similar */
     color: white;
-  }
+}
   
-  .logo-img, .user-profile {  
+.logo-img, .container__img--user {  
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    
-  }
+}
   
-  .nav-menu--lista{
+.nav-menu--lista {
     display: flex;
     flex-direction: row; 
     list-style-type: none; 
     gap: 20px;
-    padding: auto;
-  }
+    padding: 0;
+}
   
-  .nav-menu a {
+.nav-menu a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 20px;
-  }
+}
   
-  .nav-menu--elemento {
-    background-color:#8531a7;
+.nav-menu--elemento {
+    background-color: #8531a7;
     padding: 5px 10px;
     border-radius: 4px;
     color: white;
+    font-size: 16px;
     transition: font-size 0.3s;
-  } 
+}
   
-  .nav-menu--elemento{
-    color: #270533;
-    text-decoration: none;
-    font-size: 16px; /* Tamaño normal de la letra */
-    transition: font-size 0.3s; /* Suaviza la transición */
-  }
-  
-  .nav-menu--elementohover {
+.nav-menu--elemento:hover {
     font-size: 18px; /* Tamaño de la letra al pasar el cursor */
-  }
-  
-  .user-img--container{
-   margin: 0px 10px;
-   
-  }
-
-  .container__img--user{
+}
+/* tarjeta */
+.container__img--user{
     width: 50px;
     height: 50px;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+}
+
+aside {
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido hacia la derecha */
+  padding: 20px;
+  flex-grow: 1;
+}
+.container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.container .text {
+    font-size: 1em;
+    color: #333333;
+}
+
+aside, main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Catalogo */
+.catalogo {
+    display: flex;
+    flex-direction: column;   
+       
+    margin-top: 20px;
+}
+.catalogo__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 100px;
+    gap: 20px;
+}
+
+.etiqueta {
+    padding: 5px 10px;
+    background-color: #8e44ad;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.mangas {
+    display: flex;
+    gap: 10px;
+}
+
+.mangas img {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.mangas img:hover {
+    transform: scale(1.1);
+}
+
+.mas {
+    padding: 5px 10px;
+    background-color: #8e44ad;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
