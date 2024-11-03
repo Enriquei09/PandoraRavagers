@@ -120,18 +120,18 @@ body, html {
 }
 
 .section1{
-  background-image: url('./img/tokyo.png');
+  background-image: url('/img/tokyo.png');
 }
 
 .section2 {
-  background-image: url('./img/Tokyo2.png');
+  background-image: url('/img/Tokyo2.png');
 }
 
 .section3{
-  background-image: url('./img/Kyoto.png');
+  background-image: url('/img/Kyoto.png');
 }
 .section4{
-  background-image: url('./img/Hiroshima.png');
+  background-image: url('/img/Hiroshima.png');
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
