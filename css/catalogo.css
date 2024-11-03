@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* Evita el scroll principal de la página */
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+
+/*--------------------------------- 
+  barra de navegacion
+------------------------------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    background-color: #42075e;
+    justify-content: center;     
+    z-index: 1000; 
+}
+  
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 10px 20px;   
+}
+  
+  .logo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-family: 'Georgia', serif; /* Estilo de letra similar */
+    color: white;
+  }
+  
+  .logo-img, .user-profile {  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+  }
+  
+  .nav-menu--lista{
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none; 
+    gap: 20px;
+    padding: auto;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav-menu--elemento {
+    background-color:#8531a7;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    transition: font-size 0.3s;
+  } 
+  
+  .nav-menu--elemento{
+    color: #270533;
+    text-decoration: none;
+    font-size: 16px; /* Tamaño normal de la letra */
+    transition: font-size 0.3s; /* Suaviza la transición */
+  }
+  
+  .nav-menu--elementohover {
+    font-size: 18px; /* Tamaño de la letra al pasar el cursor */
+  }
+  
+  .user-img--container{
+   margin: 0px 10px;
+   
+  }
+
+  .container__img--user{
+    width: 50px;
+    height: 50px;
+  }
