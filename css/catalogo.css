@@ -78,26 +78,36 @@ body, html {
 .nav-menu--elemento:hover {
     font-size: 18px; /* Tamaño de la letra al pasar el cursor */
 }
+
 /* tarjeta */
 .container__img--user{
     width: 50px;
     height: 50px;
   }
 
-  .container {
+.container__Text{
+    color: white;
+    font-size: 3em;
+}
+
+.container {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.938);
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 400px;
+    max-width: 400px;    
     margin-left: auto;
+    gap: 20px;
 }
 
-aside {
+aside {  
   display: flex;
   justify-content: flex-end; /* Alinea el contenido hacia la derecha */
   padding: 20px;
@@ -118,7 +128,7 @@ aside {
 
 aside, main {
   flex-grow: 1;
-  padding: 20px;
+  padding:20px;
 }
 
 /* Catalogo */
@@ -132,26 +142,32 @@ aside, main {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 100px;
+    margin: 50px;
     gap: 20px;
 }
+
+
 
 .etiqueta {
     padding: 5px 10px;
     background-color: #8e44ad;
-    color: white;
     border-radius: 20px;
+    padding: 5px 10px;    
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .mangas {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .mangas img {
-    width: 100px;
-    height: 150px;
+    width: 130px;
+    height: 180px;
     border-radius: 10px;
     transition: transform 0.2s;
 }
@@ -167,5 +183,6 @@ aside, main {
     border-radius: 20px;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
