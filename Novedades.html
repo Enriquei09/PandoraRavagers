@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora Ravagers</title>
+    <link rel="stylesheet" href="./css/novedades.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <div class="logo">            
+                <h1 class="title">Pandora Ravagers</h1>
+                <div class="logo-container--img">
+                    <img class="logo-img" src="img/Imagen de WhatsApp 2024-10-27 a las 00.57.39_42610bf0.jpg" alt="Logo de Pandora">
+                </div>
+            </div>  
+            <ul class="nav-menu--lista">
+                <li class="nav-menu--elemento"><a href="#tienda">Mangas</a></li>
+                <li class="nav-menu--elemento"><a href="#eventos">Juegos de Mesa</a></li>
+                <li class="nav-menu--elemento"><a href="#novedades">Tag</a></li>
+                <li class="nav-menu--elemento"><a href="#Novedades">Novedades</a></li>
+                <li class="nav-menu--elemento"><a href="/registroUsuario.htm">Registro</a></li>
+                <li class="nav-menu--elemento"><a href="/login.html">Inicio de sesión</a></li>
+            </ul>      
+            <div class="container-img--user">
+                <div class="user-profile">
+                    <img src="./img/jamon.jpg" alt="Imagen de usuario">
+                </div>
+            </div>
+        </nav>    
+    </header>
+    
+    <main>
+        <section class="catalogo">
+            <section class="container__catalogo">
+                <!-- Aquí comienza el carrusel -->
+                <section class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="/img/462059856_1430198224558397_8901727359150929208_n.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/img/462123235_1430184554559764_3514577025363617674_n.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/img/eventos3.jpg" alt="Imagen 3">
+                        </div>
+                    </div>
+                </section>
+                <!-- Fin del carrusel -->
+            </section>
+            <section class="event-info">
+              <div class="event-text">
+                  <h2>Información del los mangas recientes</h2>
+                  <p>Conoze los nuevos mangas </p>
+              </div>
+              <div class="event-images">
+                <div class="image-placeholder">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/images.png" width="150" height="150" alt="Imagen del evento 1">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Detalles del evento 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Repite para las otras imágenes -->
+                <div class="event-images">
+                  <div class="image-placeholder">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                  <img src="/img/ssmanga.png" width="150" height="150" alt="Imagen del evento 1">
+                              </div>
+                              <div class="flip-card-back">
+                                  <p>Detalles del evento 1</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                     <!-- Repite para las otras imágenes -->
+                  <div class="event-images">
+                <div class="image-placeholder">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/mangabd.png" width="150" height="150" alt="Imagen del evento 1">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Detalles del evento 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite para las otras imágenes -->
+            </div>
+            
+          </section>
+        </section>
+    </main>
+    <footer class="footer-container">   
+        
+
+      <ul class="social-icons">
+        <li class="nav-menu--elemento"><a href="https://www.facebook.com/profile.php?id=100027047006959" target="_blank">Facebook</a></a></li>
+        <li class="nav-menu--elemento"><a href="https://www.instagram.com/pandora_ravagers?igsh=YmM3djZ2eHV5amNu" target="_blank">Twitter</a></li>
+        <li class="nav-menu--elemento"><a href="https://instagram.com" target="_blank">Instagram</a></li>          
+      </ul> 
+           
+      <div class="contact-info">
+        <p>Teléfono WhatsApp: 7721005528 | Correo: Papas@gmail.com</p>
+      </div>
+   
+      <div class="menu-footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#privacidad">Política de Privacidad</a>
+      </div>
+   
+      <div class="copyright">
+        &copy; 2024 Pandora Ravagers. Todos los derechos reservados.
+      </div>
+       
+    </footer>  
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".carousel-slide");
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+
+        // Cambia de imagen cada 3 segundos
+        setInterval(showSlides, 3000);
+
+        // Muestra la primera imagen al cargar la página
+        showSlides();
+    </script>
+</body>
+</html>
