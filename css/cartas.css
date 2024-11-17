@@ -1,0 +1,291 @@
+body{
+    background-image: url(/img/Imagen\ de\ WhatsApp\ 2024-10-27\ a\ las\ 00.57.39_42610bf0.jpg);
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    background-color: #42075e;
+    justify-content: center;     
+    z-index: 1000; 
+    
+   
+    
+  }
+  
+  .logo img, .user-profile img {
+    width: 50px;
+  height: 50px;
+  border-radius: 50%
+  }
+  .logo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-family: 'Georgia', serif; /* Estilo de letra similar */
+    color: white;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 10px 20px;  
+  }
+  
+  .nav-menu--lista{
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none; 
+    gap: 20px;
+    padding: auto;
+  }
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .nav-menu--elemento {
+    background-color:#8531a7;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    transition: font-size 0.3s;
+  } 
+  .nav-menu {
+    display: flex;
+    gap: 10px;
+  }
+  .user-img--container{
+  margin: 0px 10px;
+  position: relative;
+  display: inline-block;
+  }
+  /* Menú desplegable */
+.user-menu {
+    display: none; /* Ocultar inicialmente */
+    position: absolute;
+    top: 60px; /* Ajusta la posición del menú según tu diseño */
+    right: 0;
+    background-color: rgba(184, 156, 190, 0.875);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 150px;
+}
+
+.user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.user-menu li:last-child {
+    border-bottom: none;
+}
+
+.user-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-menu li a:hover {
+    background-color: #42075e;
+    color: white;
+}
+
+/* Cambia el cursor al pasar sobre la imagen del usuario */
+.user-profile img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.user-profile img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el cursor */
+}
+  /* Estilo para el enlace activo */
+  .nav-menu a.active {
+    background-color: #1e022e;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: font-size 0.3s; /* Suaviza la transición */
+  }
+  
+  /* Estilo para los enlaces normales */
+  .nav-menu a {
+    text-decoration: none;
+    font-size: 16px; /* Tamaño normal de la letra */
+    transition: font-size 0.3s; /* Suaviza la transición */
+  }
+  
+  /* Cambia el tamaño de la letra al pasar el cursor */
+  .nav-menu a:hover {
+    font-size: 18px; /* Tamaño de la letra al pasar el cursor */
+  }
+  /* Agrega margen superior al main para separar del header fijo */
+  main {
+    margin-top: 100px; /* Ajusta según el tamaño del header */
+  }
+  /*--------------------------------- 
+  Footer
+------------------------------------*/
+
+.footer-container {
+    background-color: rgb(47, 14, 63) ;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    
+  } 
+  
+  /* Enlaces del footer */
+  .social-icons--texto {
+    color: #aaaaaa;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  /* Redes sociales */
+  .social-icons{
+    display: flex;
+    margin: 10px;
+    padding: 0px;
+    gap: 15px;
+    list-style-type: none;
+    font-size: 24px;
+  }
+  
+  /* Derechos de autor */
+  .copyright {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  footer a:hover {
+    color: #f1c40f;
+  }
+
+  /*Cartas*/
+  .cards-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa00;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffffad;
+    border: 1px solid #ffffffa5;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px; /* Ajusta el ancho del div */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.412);
+}
+
+.card img {
+    width: 100%; /* Imagen ocupa todo el ancho del div */
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 16px; /* Texto más compacto */
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 2px 0; /* Reduce espacio entre líneas */
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Reduce espacio entre elementos */
+    margin: 5px 0;
+}
+
+.quantity-container input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #fff8f8;
+    border-radius: 5px;
+}
+
+.card button {
+    background-color: #561562;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #218838;
+}
+
+/* Estilo general del texto */
+.cards-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #44043a;
+}
+
+  
+  /*Busqueda*/
+  .search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
