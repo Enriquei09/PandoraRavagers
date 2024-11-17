@@ -29,7 +29,7 @@ border-radius: 50%
 
 .title {
   font-size: 24px;
-  font-family: 'Georgia', serif; /* Estilo de letra similar */
+  font-family: 'Georgia', serif; 
   color: white;
 }
 
@@ -67,38 +67,38 @@ border-radius: 50%
 .user-img--container{
 margin: 0px 10px;
 }
-/* Estilo para el enlace activo */
+
 .nav-menu a.active {
   background-color: #1e022e;
   padding: 5px 10px;
   border-radius: 4px;
   color: white;
-  text-decoration: none; /* Quita el subrayado del enlace */
-  transition: font-size 0.3s; /* Suaviza la transición */
+  text-decoration: none; 
+  transition: font-size 0.3s; 
 }
 
-/* Estilo para los enlaces normales */
+
 .nav-menu a {
   text-decoration: none;
-  font-size: 16px; /* Tamaño normal de la letra */
-  transition: font-size 0.3s; /* Suaviza la transición */
+  font-size: 16px; 
+  transition: font-size 0.3s; 
 }
 
 /* Cambia el tamaño de la letra al pasar el cursor */
 .nav-menu a:hover {
-  font-size: 18px; /* Tamaño de la letra al pasar el cursor */
+  font-size: 18px; 
 }
 /* Agrega margen superior al main para separar del header fijo */
 main {
-  margin-top: 100px; /* Ajusta según el tamaño del header */
+  margin-top: 100px; 
 }
 
 /* Estilos del carrusel */
 .carousel {
-  margin-top: 20px; /* Ajusta para separar del contenido de arriba */
+  margin-top: 20px; 
   width: 100%;
   max-width: 600px;
-  margin: 50px auto; /* Centra el carrusel horizontalmente */
+  margin: 50px auto; 
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
