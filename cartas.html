@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora Ravagers</title>
+    <link rel="stylesheet" href="./css/cartas.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo-img" src="img/Imagen de WhatsApp 2024-10-27 a las 00.57.39_42610bf0.jpg" alt="Logo de Pandora">
+                </a>
+                <h1 class="title">Pandora Ravagers</h1>
+            </div>
+            
+            </div>  
+            <ul class="nav-menu--lista">
+                <li class="nav-menu--elemento"><a href="#tienda">Mangas</a></li>
+                <li class="nav-menu--elemento"><a href="#eventos">Juegos de Mesa</a></li>
+                <li class="nav-menu--elemento"><a href="#novedades">Tag</a></li>
+                <li class="nav-menu--elemento"><a href="#Novedades">Novedades</a></li>
+                <li class="nav-menu--elemento"><a href="/registroUsuario.htm">Registro</a></li>
+                <li class="nav-menu--elemento"><a href="/login.html">Inicio de sesión</a></li>
+            </ul>      
+            <div class="container-img--user">
+                <div class="user-profile" onclick="toggleUserMenu()">
+                    <img src="./img/jamon.jpg" alt="Imagen de usuario">
+                </div>
+                <div class="user-menu" id="userMenu">
+                    <ul>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#perfil">Perfil</a></li>
+                        <li><a href="#cerrar-sesion">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            </div>
+        </nav>    
+    </header>
+    
+    <main>
+    
+        <section class="cards-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar carta..." onkeyup="filterCards()">
+            </div>
+            
+            <div class="cards-section">
+                <h2>Cartas</h2>
+                <div class="cards-container" id="cardsContainer">
+                    <!-- Carta 1 -->
+                    <div class="card" data-name="Agumon">
+                        <img src="img/cartadigimon1.jpg" alt="Agumon">
+                        <h3>Agumon</h3>
+                        <p>Precio: $200</p>
+                        <div class="quantity-container">
+                            <input type="number" id="quantity1" value="1" min="1">
+                            <button onclick="addToCart('Agumon', 200, 'quantity1')">Agregar</button>
+                        </div>
+                    </div>
+                    <!-- Carta 2 -->
+                    <div class="card" data-name="DexDoruGamon">
+                        <img src="img/cartadigimon2.jpg" alt="DexDoruGamon">
+                        <h3>DexDoruGamon</h3>
+                        <p>Precio: $3</p>
+                        <div class="quantity-container">
+                            <input type="number" id="quantity2" value="1" min="1">
+                            <button onclick="addToCart('DexDoruGamon', 3, 'quantity2')">Agregar</button>
+                        </div>
+                    </div>
+                    <!-- Carta 3 -->
+                    <div class="card" data-name="DexDoruGreymon">
+                        <img src="img/cartadigion3.jpg" alt="DexDoruGreymon">
+                        <h3>DexDoruGreymon</h3>
+                        <p>Precio: $4</p>
+                        <div class="quantity-container">
+                            <input type="number" id="quantity3" value="1" min="1">
+                            <button onclick="addToCart('DexDoruGreymon', 4, 'quantity3')">Agregar</button>
+                        </div>
+                    </div>
+                    <!-- Carta 4 -->
+                    <div class="card" data-name="Dinorexmon">
+                        <img src="img/cartadigimon3.jpg" alt="Dinorexmon">
+                        <h3>Dinorexmon</h3>
+                        <p>Precio: $5</p>
+                        <div class="quantity-container">
+                            <input type="number" id="quantity4" value="1" min="1">
+                            <button onclick="addToCart('Dinorexmon', 5, 'quantity4')">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    
+    <footer class="footer-container">   
+        
+
+      <ul class="social-icons">
+        <li class="nav-menu--elemento"><a href="https://www.facebook.com/profile.php?id=100027047006959" target="_blank">Facebook</a></a></li>
+        <li class="nav-menu--elemento"><a href="https://www.instagram.com/pandora_ravagers?igsh=YmM3djZ2eHV5amNu" target="_blank">Twitter</a></li>
+        <li class="nav-menu--elemento"><a href="https://instagram.com" target="_blank">Instagram</a></li>          
+      </ul> 
+           
+      <div class="contact-info">
+        <p>Teléfono WhatsApp: 7721005528 | Correo: Papas@gmail.com</p>
+      </div>
+   
+      <div class="menu-footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#privacidad">Política de Privacidad</a>
+      </div>
+   
+      <div class="copyright">
+        &copy; 2024 Pandora Ravagers. Todos los derechos reservados.
+      </div>
+       
+    </footer>  
+        
+    </script>
+         <script src="./js/contador.js"></script>
+    </body>
+    </html>
