@@ -1,180 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: auto; /* Permite el scroll principal */
-  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  width: 100%;  
+  background-color: #42075e;
+  justify-content: center;     
+  /* z-index: 1000;  */
   
-  .main-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .scroll-section {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    overflow-y: auto;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    padding: 0%;
-  }
-  
-  .section1 {
-    background-image: url("/img/mangas-mas-vendidos-de-la-historia.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .section2 {
-    background-image: url('/img/86be4d5d-2313-40c4-ab4c-990f26ad39e8._CR0\,0\,3000\,1500_SX750_SY375_.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  .section3{
-    background-image: url('/img/descarga.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  .section4{
-    background-image: url(/img/Imagen\ de\ WhatsApp\ 2024-10-27\ a\ las\ 02.54.49_39b88110.jpg);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-  .content {
-    height: auto;
-    width: 30%;  
-    padding: 20px;
-    background-color: rgba(12, 12, 12,0.8); /* Fondo semitransparente para mejorar la legibilidad */
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;  
-    background-color: #42075e;
-    justify-content: center;     
-    z-index: 1000; 
-    
-  }
-  
-  .logo img, .user-profile img {
-    width: 50px;
+}
+
+/*Inicio Navar */
+
+.logo img, .user-profile img {
+  width: 50px;
   height: 50px;
   border-radius: 50%
-  }
-  .logo{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-family: 'Georgia', serif; /* Estilo de letra similar */
-    color: white;
-  }
-  
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    margin: 10px 20px;  
-  }
-
-  .nav-menu--lista{
-    display: flex;
-    flex-direction: row; 
-    list-style-type: none; 
-    gap: 20px;
-    padding: auto;
-  }
-  .nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .nav-menu--elemento {
-    background-color:#8531a7;
-    padding: 5px 10px;
-    border-radius: 4px;
-    color: white;
-    transition: font-size 0.3s;
-  } 
-  .nav-menu {
-    display: flex;
-    gap: 10px;
 }
+
+.logo{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: 'Georgia', serif;
+  color: white;
+
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+  margin: 10px 20px;  
+}
+
+.nav-menu--lista{
+  display: flex;
+  /* flex-direction: row;  */
+  list-style-type: none; 
+  gap: 20px;    
+}
+
+
+.nav-menu a {
+  /* text-decoration: none; */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: font-size 0.3s;
+}
+
+.nav-menu--elemento {
+  background-color:#8531a7;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  /* transition: font-size 0.3s; */
+} 
+
 .user-img--container{
   margin: 0px 10px;
- }
-/* Estilo para el enlace activo */
-.nav-menu a.active {
-    background-color: #1e022e;
-    padding: 5px 10px;
-    border-radius: 4px;
-    color: white;
-    text-decoration: none; /* Quita el subrayado del enlace */
-    transition: font-size 0.3s; /* Suaviza la transición */
 }
 
-/* Estilo para los enlaces normales */
-.nav-menu a {
-    text-decoration: none;
-    font-size: 16px; /* Tamaño normal de la letra */
-    transition: font-size 0.3s; /* Suaviza la transición */
-}
+/* Estilo para el enlace activo */
+/* .nav-menu a.active {
+  background-color: #1e022e;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none; 
+}  */
+
 
 /* Cambia el tamaño de la letra al pasar el cursor */
 .nav-menu a:hover {
-    font-size: 18px; /* Tamaño de la letra al pasar el cursor */
+    font-size: 18px;  
+} 
+ 
+/* Fin Navar */
+  
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* main */
+  
+.scroll-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+  /* box-sizing: border-box; */
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: center;
+  text-align: center;
+}  
+  
+.section__mangas {background-image: url("/img/mangas_mas_vendidos.jpg");}
+.section__comics{background-image: url('/img/comics.jpg');}
+.section__animes{ background-image: url('/img/descarga.jpg');}
+.section__location {
+  background-image: url("/img/jojo.png");    
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+   
+  
+.content {
+  height: auto;
+  width: 30%;  
+  padding: 20px;
+  background-color: rgba(12, 12, 12,0.8); /* Fondo semitransparente para mejorar la legibilidad */
+  box-sizing: border-box;
 }
 
 .maps{
   margin: 20px;
   
 }
+/* fin main */
+
+/* inicio footer*/
+
 footer {
   background-color: #42075e;
-  color: white;
-  padding: 20px 0;
+  color: white;  
   text-align: center;
 }
 
-/* Estilos para el contenido del footer */
-.footer-container {
+.footer-container { 
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  max-width: 800px;
-  margin: 0 auto;
+  gap: 10px; 
+  
+} 
+
+
+
+/* Enlaces del footer */
+.social-icons--texto {
+  color: #aaaaaa;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
 /* Enlaces del footer */
@@ -190,12 +194,12 @@ footer a:hover {
 }
 
 /* Redes sociales */
-.social-icons {
+.social-icons{
   display: flex;
+  margin: 10px;
+  padding: 0px;
   gap: 15px;
-}
-
-.social-icons a {
+  list-style-type: none;
   font-size: 24px;
 }
 
@@ -205,4 +209,5 @@ footer a:hover {
   color: #aaa;
   margin-top: 10px;
 }
-  
+
+/* fin footer */
